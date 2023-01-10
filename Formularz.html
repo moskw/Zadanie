@@ -1,12 +1,109 @@
 <!DOCTYPE html>
-     <html lang="pl-PL">
-      <html>
-        <head>
-           <meta charset="utf-8">
-              <title>Formularz</title>
-       </head>
-<body bgcolor="aqua">
- Tutaj będzie formularz<br>
- <A HREF="index.html"> Wróć </A>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <style>
+        body{
+            background: rgb(139, 138, 138);
+            color:white
+        }
+        h1{
+            text-align: center;
+        }
+      button{
+        margin-top: 580px;
+      }
+        #left{
+            float: left;
+            margin-top:15px;
+            margin-left: 500px;
+        }
+        #right{
+            float:right;
+            margin-right: 500px;
+        }
+        #home{
+            margin-top: 10px;
+            margin-right: 5px;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<form enctype="text/plain" action="mailto:SzymonMoskwa9@wp.pl" subject="formularz_dane" method="Post">
+
+<h1>ANKIETA SPOŁECZNA</h1>
+    <form id="forms">
+        
+        <div id="left">
+        
+        <label id="name">1. Podaj imie</label>
+                 <input type="text" id="lname" name="lname">
+           
+        <br><br>
+        <label id="email">2. Podaj email</label>
+                 <input type="text" id="lemail" name="lemail">
+        
+        <br><br>
+        <label id="years">3. Podaj wiek</label>
+                 <input type="text" id="lyears" name="lyears">
+
+       <br><br>
+       <label id="milion">4. Chciałbyś zostać zostać milionerem?</label></br>
+                    <input type="checkbox" id="lmilion" name="lmilion">TAK
+                    <input type="checkbox" id="lmilion" name="lmilion">NIE
+        <br><br>
+        <label id="sys">5.Ulubiony system operacyjny</label></br>
+                    <input type="checkbox" id="lsys" name="lsys">Linux
+                    <input type="checkbox" id="lsys" name="lsys">Windows
+                    <input type="checkbox" id="lsys" name="lsys">MacOs
+        </div>
+        <div id="right">
+       
+            <label id="game">6.W rodzaj gier grasz?</label></br>
+                    <input type="checkbox" id="lgame" name="lgame">Linux
+                    <input type="checkbox" id="lgame" name="lgame">Windows
+                    <input type="checkbox" id="lgame" name="lgame">MacOs
+        <br><br>
+            <label id="music">7. Ulubiony rodzaj muzyki:</label></br>
+                    <input type="radio" id="lmusic" name="lmusic">rock
+                    <input type="radio" id="lmusic" name="lmusic">pop
+                    <input type="radio" id="lmusic" name="lmusic">metal
+                    <input type="radio" id="lmusic" name="lmusic">reggae
+        <br><br>
+            <label id="write">8. Ulubiony rodzaj literacki:</label></br>
+                     <input type="checkbox" id="lwrite" name="lwrite">TAK
+                     <input type="checkbox" id="lwrite" name="lwrite">NIE
+                     <input type="checkbox" id="lwrite" name="lwrite">NIE
+        <br><br>
+            <label id="ankieta">9. Skąd dowiedziałeś się o ankiecie? </label></br>
+                    <input type="checkbox" id="lankieta" name="lankieta">TAK
+                    <input type="checkbox" id="lankieta" name="lankieta">TAK
+         <br><br>
+            <label id="ankieta">10. Od skali 1-10 jak oceniasz ankiete? </label></br>
+                     <select>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                           <option value="6">6</option>
+                           <option value="7">7</option>
+                           <option value="8">8</option>
+                           <option value="9">9</option>
+                           <option value="10">10</option>
+                     </select>
+                     </div>
+
+    </br><br>
+    <A HREF="index.html" id="home"> Wróć </A>
+        <button>SUBMIT</button>
+        <button>Reset</button>
+    </form>
 </body>
 </html>
